@@ -3,7 +3,10 @@
 ## Description
 
 ## Table of contents
-[link] link to sections of readme
+*
+*
+*
+*
 ## Installation
 
 ### Usage

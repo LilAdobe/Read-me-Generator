@@ -1,40 +1,86 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
-const fs = require('fs')
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = 
 
 inquirer
-.prompt([
-    {
-        type: 'input',
-        message: 'yes if test',
-        name: 'test'
+    .prompt([
+        {
+            type: 'input',
+            message: 'Enter Title',
+            name: 'title'
 
-    },
-    {
-        type: 'input',
-        message: 'yes if test1',
-        name: 'test1'
+        },
+        {
+            type: 'input',
+            message: 'Enter Description',
+            name: 'description'
 
-    },
-])
-    .then((response) =>
-        fs.writeFile('ReadMe.md', JSON.stringify
-            (response), (err) => {
-                if (err) console.log(err);
-                console.log('its made');
+        },
+        {
+            type: 'input',
+            message: 'Write installation steps',
+            name: 'installation'
+
+        },
+        {
+            type: 'input',
+            message: 'Enter usage',
+            name: 'usage'
+
+        },
+        {
+            type: 'checkbox',
+            message: 'Choose your license',
+            name: 'license',
+            choices: ['bsd', 'licence2']
+
+        },
+        {
+            type: 'input',
+            message: 'enter contribution',
+            name: 'contributing'
+
+        },
+        {
+            type: 'input',
+            message: 'enter test',
+            name: 'test'
+
+        },
+        {
+            type: 'input',
+            message: 'enter your github',
+            name: 'github'
+        },
+        {
+            type: 'input',
+            message: 'enter name',
+            name: 'name'
+        },
+        {
+            type: 'input',
+            message: 'enter email',
+            name: 'email'
+        },
+    ]).then(answers => {
+        let something = generateMarkdown(answers)
+        fs.writeFile('ReadMe1.md', something,
+            (err) => {
+                if (err) throw err;
             })
+    }
     );
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+//function writeToFile()
 //added code
 
 
 
 // TODO: Create a function to initialize app
-function init() { }
+//function init() { }
 
 // Function call to initialize app
-init();
+//init()
