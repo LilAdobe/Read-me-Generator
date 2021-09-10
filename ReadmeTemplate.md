@@ -19,5 +19,11 @@
 
 ### Questions
 
-[Github](link) - to my github
-[email](email) - how to reach me
+* [Github](link) - to my github
+* [email](email) - how to reach me
+
+
+
+
+
+

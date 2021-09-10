@@ -34,7 +34,7 @@ inquirer
             type: 'checkbox',
             message: 'Choose your license',
             name: 'license',
-            choices: ['bsd', 'licence2']
+            choices: ['BSD3', 'Eclipse', 'ISC']
 
         },
         {
