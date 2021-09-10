@@ -8,5 +8,5 @@ A generator that creats a readme.md file
 
 ## Links
 - [Github](https://github.com/LilAdobe/Read-me-Generator)
-- [ReadMeGenerated]()
+- [ReadMeGenerated](https://github.com/LilAdobe/Read-me-Generator/blob/main/Example-Readme/ReadMe1.md)
 - [Video](https://drive.google.com/file/d/1PsH_dJfAf98y5gWHVpjJ1MuQftaE6oSp/view?usp=sharing)
